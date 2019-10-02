@@ -1,0 +1,9 @@
+<h1>Articles</h1>
+{{ if($employees) }}
+    {{ foreach($employees as $employee) }}
+        <h2>{{ $employee->name }}</h2>
+        <p>{{ $employee->address }}</p>
+        <hr>
+    {{ /foreach }}
+    {{ $employee->pagination() }}
+{{ /if }}

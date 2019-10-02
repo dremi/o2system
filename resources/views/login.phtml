@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Page</title>
+    <!-- PACE-->
+    <link rel="stylesheet" type="text/css" href="<?= base_url() . '/assets/admin/' ?>plugins/PACE/themes/blue/pace-theme-flash.css">
+    <script type="text/javascript" src="<?= base_url() . '/assets/admin/' ?>plugins/PACE/pace.min.js"></script>
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="<?= base_url() . '/assets/admin/' ?>plugins/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Fonts-->
+    <link rel="stylesheet" type="text/css" href="<?= base_url() . '/assets/admin/' ?>plugins/themify-icons/themify-icons.css">
+    <!-- Primary Style-->
+    <link rel="stylesheet" type="text/css" href="<?= base_url() . '/assets/admin/' ?>build/css/first-layout.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file://--> 
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script type="text/javascript" src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Sweet Alert-->
+    <link rel="stylesheet" type="text/css" href="<?= base_url() . '/assets/admin/' ?>plugins/bootstrap-sweetalert/lib/sweet-alert.css">
+    <!-- Loading -->
+    <link rel="stylesheet" type="text/css" href="<?= base_url() . '/assets/admin/' ?>/build/css/loading/loading.css"/>
+    <link rel="stylesheet" type="text/css" href="<?= base_url() . '/assets/admin/' ?>/build/css/loading/loading-btn.css"/>
+    
+    <script>
+        var BASE_URL = "<?= base_url() ?>";
+    </script>
+  </head>
+  <body style="background-image: url(<?= base_url() . '/assets/admin/' ?>build/images/backgrounds/17.jpg)" class="body-bg-full v2">
+    <div class="container page-container">
+      <div class="page-content">
+        <div class="v2">
+          <div class="logo"><img src="../assets/img/logo/logo-200px.png" alt="" width="80"></div>
+          <form method="post" id="form-login" action="<?= base_url() ?>/userlogin" class="form-horizontal">
+            <div class="form-group">
+              <div class="col-xs-12">
+                <input type="text" id="username" name="username" placeholder="Username" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-12">
+                <input type="password" id="password" name="password" placeholder="Password" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-12">
+                <div class="checkbox-inline checkbox-custom pull-left">
+                  <input id="exampleCheckboxRemember" type="checkbox" value="remember">
+                  <label for="exampleCheckboxRemember" class="checkbox-muted text-muted">Remember me</label>
+                </div>
+                <div class="pull-right"><a href="javascript:alert('Coming Soon!')" class="inline-block form-control-static">Forgot a Passowrd?</a></div>
+              </div>
+            </div>
+              <button type="button" onclick="javascript:doLogin()" id="btn-submit" class="btn-lg btn btn-primary btn-rounded btn-block">Sign in</button>
+          </form>
+          <hr>
+          <p class="text-muted">Sign in with your Facebook or Twitter accounts</p>
+          <div class="clearfix">
+            <div class="pull-left">
+              <button type="button" style="width: 130px" onclick="javascript:alert('Coming Soon!')" class="btn btn-outline btn-rounded btn-primary"><i class="ti-facebook mr-5"></i> Facebook</button>
+            </div>
+            <div class="pull-right">
+              <button type="button" style="width: 130px" onclick="javascript:alert('Coming Soon!')" class="btn btn-outline btn-rounded btn-info"><i class="ti-twitter-alt mr-5"></i> Twitter</button>
+            </div>
+          </div>
+          <hr>
+          <div class="clearfix">
+            <p class="text-muted mb-0 pull-left">Want new account?</p><a href="javascript:alert('Coming Soon!')" class="inline-block pull-right">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- jQuery-->
+    <script type="text/javascript" src="<?= base_url() . '/assets/admin/' ?>plugins/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript-->
+    <script type="text/javascript" src="<?= base_url() . '/assets/admin/' ?>plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Custom JS-->
+    <script type="text/javascript" src="<?= base_url() . '/assets/admin/' ?>pages/login.js"></script>
+    <!-- Sweet Alert-->
+    <script type="text/javascript" src="<?= base_url() . '/assets/admin/' ?>plugins/bootstrap-sweetalert/lib/sweet-alert.min.js"></script>
+    
+  </body>
+</html>
